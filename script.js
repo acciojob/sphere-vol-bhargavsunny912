@@ -5,7 +5,7 @@ function volume_sphere(e) {
 	let vol=document.forms[0].volume;
 
 	if(rad.value>=0 && rad.value/1){
-		let volume=((4/3)*(3.14)*((rad.value.trim())**2));
+		let volume=((4/3)*(Math.PI)*(rad.value**3));
 		vol.value=volume.toFixed(4);
 		rad.value="";
 	}
